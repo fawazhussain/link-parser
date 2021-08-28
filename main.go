@@ -10,8 +10,15 @@ import (
 var exampleHtml = `
 <html>
 <body>
-	<h1>Hello</h1>
-	<a href="/other-page">Link to another page</a>
+  <h1>Social stuffs</h1>
+  <div>
+    <a href="testing 123">
+      Check me 
+    </a>
+    <a href="out">
+      on <strong>Github</strong>!
+    </a>
+  </div>
 </body>
 </html>
 `
@@ -22,6 +29,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(links)
+	fmt.Printf("%+v", links)
 
 }
